@@ -135,3 +135,12 @@ td {
     display: block;
     margin-top: 10px;
 }
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
