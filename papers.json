@@ -9,9 +9,9 @@
         "year": "2025.5",
         "image": "img/eg2025/teaser.png",
         "links": {
-            "ProjectPage": "projectpages/eg2025.html",
-            "Paper": "img/eg2025/0th_cycle_paper1071.pdf",
-            "Supplementary": "img/eg2025/0th_cycle_paper1071_sub.pdf",
+            "project page": "projectpages/eg2025.html",
+            "paper": "img/eg2025/0th_cycle_paper1071.pdf",
+            "supplementary": "img/eg2025/0th_cycle_paper1071_sub.pdf",
             "YouTube": "https://youtu.be/h9Keu9abc-g"
         }
     },
@@ -24,8 +24,8 @@
         "year": "2023.4",
         "image": "img/ite2023/teaser.png",
         "links": {
-            "ProjectPage": "projectpages/ite2023.html",
-            "Paper": "https://doi.org/10.3169/mta.11.75",
+            "project page": "projectpages/ite2023.html",
+            "paper": "https://doi.org/10.3169/mta.11.75",
             "YouTube": "https://youtu.be/OOtvkFNTKT0?si=Cgl3MHf4UJpUPFp0"
         }
     },
@@ -38,7 +38,7 @@
         "year": "2022.8",
         "image": "img/sig2022/teaser.jpg",
         "links": {
-            "Paper": "https://dl.acm.org/doi/10.1145/3532721.3535563",
+            "paper": "https://dl.acm.org/doi/10.1145/3532721.3535563",
             "YouTube": "https://youtu.be/8gjUAtAcHBc"
         },
         "extra": ["GIZMODO"],
@@ -51,7 +51,7 @@
         "detailed_conference": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games，Poster",
         "year": "2024.5",
         "links": {
-            "Paper": "https://i3dsymposium.org/2024/posters.html"
+            "paper": "https://i3dsymposium.org/2024/posters.html"
         }
     },
     {
@@ -61,7 +61,7 @@
         "detailed_conference": "IEEE VR，Poster，A-C43",
         "year": "2022.3",
         "links": {
-            "Paper": "https://ieeexplore.ieee.org/document/9757674"
+            "paper": "https://ieeexplore.ieee.org/document/9757674"
         },
         "extra": ["The Nomiation for the Best Poster Award"],
         "extra_links": ["https://ieeevr.org/2022/awards/conference-awards/#poster-nominees"]
