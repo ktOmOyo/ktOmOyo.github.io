@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDCF-Triangles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">A Unified Discrete Collision Framework <br> for Triangle Primitives</h1>
+        <p class="authors" id="authors">Tomoyo Kikuchi and Takashi Kanai</p>
+        <p class="authors_info" id="authors_info">The University of Tokyo</p>
+        <p class="conference" id="conference">Eurographics 2025</p>
+
+        <div class="buttons">
+            <a href="img/eg2025/0th_cycle_paper1071.pdf" class="button">Paper (submission)</a>
+            <a href="img/eg2025/0th_cycle_paper1071_sub.pdf" class="button">Supplementary (submission)</a>
+            <a href="https://github.com/ktOmOyo/UDCF-Triangles" class="button">Code</a>
+            <!-- <a href="#" class="button">DOI (not yet)</a> -->
+        </div>
+
+        <h2>Abstract</h2>
+        <p id="abstract">We present a unified, primitive-first framework with DCD for collision response in physics-based simulations. Previous
+        methods do not provide sufficient solutions on a framework that resolves edge-triangle and edge-edge collisions when
+        handling self-collisions and inter-object collisions in a unified manner.
+        We define a scalar function and its gradient, representing the distance between two triangles and the movement direction
+        for collision response, respectively. The resulting method offers an effective solution for collisions with minor
+        computational overhead and robustness for any type of deformable object, such as solids or cloth. The algorithm is
+        conceptually simple and easy to implement. When using PBD/XPBD, it is straightforward to incorporate our method into a
+        collision constraint.</p>
+
+        <h2>Video</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://youtu.be/h9Keu9abc-g" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <h2>Results</h2>
+        <div class="carousel">
+            <img src="../img/eg2025/teaser.png" class="slide" alt="Result 1">
+            <img src="../img/eg2025/result.png" class="slide" alt="Result 2">
+        </div>
+
+        <!-- <h2>Related Publications</h2>
+        <p>Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura: “AIR-range: Arranging optical
+        systems to present mid-AIR images with continuous luminance on and above a tabletop”, IEEE VR, Poster, A-C43 (2022.3).</p> -->
+
+        <h2>BibTeX</h2>
+        <pre id="bibtex">
+        @article{tomoyokikuchi2025,
+        author = {Tomoyo Kikuchi and Takashi Kanai},
+        journal = {Computer Graphics Forum (Proc. Eurographics 2025)},
+        year = {2025}
+        }
+        </pre>
+    </div>
+    <!-- <script src="../publication_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../papers.json")
+                .then(response => response.json())
+                .then(data => {
+                    let relatedPublications = document.getElementById("related-publications");
+                    relatedPublications.innerHTML = "";
+
+                    let targetTitle = document.getElementById("title").textContent.trim();
+
+                    data.forEach(paper => {
+                        if (paper.title.includes(targetTitle)) {
+                            let linksHTML = "";
+                            if (paper.links) {
+                                for (let key of Object.keys(paper.links)) {
+                                    if (key === "ProjectPage") {
+                                        linksHTML = ` "<a href="${paper.links[key]}" target="_blank">${paper.title}</a>"`;
+                                        break;
+                                    } else if (key === "Paper") {
+                                        linksHTML = ` "<a href="${paper.links[key]}" target="_blank">${paper.title}</a>"`;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (linksHTML === "") {
+                                linksHTML = ` "${paper.title}"`;
+                            }
+
+                            let extraHTML = "";
+                            if (Array.isArray(paper.extra)) {
+                                extraHTML = paper.extra.map((text, index) => {
+                                    let link = (Array.isArray(paper.extra_links) && paper.extra_links[index]) ? paper.extra_links[index] : "";
+                                    if (link) {
+                                        return `<strong style="color: red;">[<a href="${link}" target="_blank">${text}</a>]</strong>`;
+                                    } else {
+                                        return `<strong style="color: red;">[${text}]</strong>`;
+                                    }
+                                }).join(" ");
+                            }
+
+                            let paperHTML = `
+                                    <li>
+                                        ${paper.authors}${": "}
+                                        ${linksHTML}${", "}
+                                        <em>${paper.detailed_conference}</em>
+                                        ${"("}${paper.year}${")"}
+                                        ${extraHTML}
+                                    </li>
+                                `;
+                            relatedPublications.innerHTML += paperHTML;
+                        }
+                    });
+                })
+                .catch(error => console.error("Error loading related publications:", error));
+        });
+    </script> -->
+</body>
+
+</html>

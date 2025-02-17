@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 80px;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 160px 0 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.authors,
+.authors_info,
+.conference {
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 700px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#abstract {
+    text-align: justify;
+}

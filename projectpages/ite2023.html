@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIR-range</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">AIR-range</h1>
+        <p class="authors" id="authors">Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura</p>
+        <p class="authors_info" id="authors_info">The University of Tokyo</p>
+        <p class="conference" id="conference">ITE Transactions on Media Technology and Applications 2023</p>
+
+        <div class="buttons">
+            <a href="https://doi.org/10.3169/mta.11.75" class="button">Paper</a>
+        </div>
+
+        <h2>Abstract</h2>
+        <p id="abstract">Mid-air images in a three-dimensional space beyond a screen enable users to observe virtual content without wearing any
+        devices. When using a symmetrical mirror structure with dual slit-mirror arrays, the system enables the display of a
+        large mid-air image by integrating multiple imaging paths. However, in the mirror design used in previous research, the
+        luminance was discontinuous. In this study, we propose a novel tabletop system in which a tall mid-air image with
+        continuous luminance is superimposed onto physical objects. Our proposed system, called “AIR-range”, presents mid-air
+        images that appear seamlessly from the table surface to mid-air. By theorizing the relationship between the parameters
+        of optical systems and luminance of mid-air images, we optimized the optical systems to minimize the difference in
+        luminance between the imaging paths. The results of the comparison with the previous method showed an improvement in
+        luminance continuity.</p>
+
+        <h2>Video</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://youtu.be/OOtvkFNTKT0" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+
+        <!-- <h2>Results</h2>
+        <div class="carousel">
+            <img src="../img/teaser.png" class="slide" alt="Result 1">
+            <img src="../img/teaser.png" class="slide" alt="Result 2">
+            <img src="../img/teaser.png" class="slide" alt="Result 3">
+        </div> -->
+
+        <h2>Publications</h2>
+        <p>Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura: "AIR-range: Designing optical
+        systems to present a tall mid-AIR image with continuous luminance on and above a tabletop", ITE Transactions on Media
+        Technology and Applications, vol. 11, no. 2, pp. 75-87 (2023. 4).</p>
+        <p>Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura: “AIR-range: Arranging optical
+        systems to present mid-AIR images with continuous luminance on and above a tabletop”, IEEE VR, Poster, A-C43 (2022.3).</p>
+
+        <h2>BibTeX</h2>
+        <pre id="bibtex">
+        @article{tomoyokikuchi2023,
+        title={[Paper] AIR-range: Designing optical systems to present a tall mid-AIR image <br> with continuous luminance on and
+        above a tabletop},
+        author={Tomoyo Kikuchi and Yuchi Yahagi and Shogo Fukushima and Saki Sakaguchi and Takeshi Naemura},
+        journal={ITE Transactions on Media Technology and Applications},
+        volume={11},
+        number={2},
+        pages={75-87},
+        year={2023},
+        doi={10.3169/mta.11.75}
+        }
+        </pre>
+    </div>
+    <!-- <script src="../publication_script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../papers.json")
+                .then(response => response.json())
+                .then(data => {
+                    let relatedPublications = document.getElementById("related-publications");
+                    relatedPublications.innerHTML = "";
+
+                    let targetTitle = document.getElementById("title").textContent.trim();
+
+                    data.forEach(paper => {
+                        if (paper.title.includes(targetTitle)) {
+                            let linksHTML = "";
+                            if (paper.links) {
+                                for (let key of Object.keys(paper.links)) {
+                                    if (key === "ProjectPage") {
+                                        linksHTML = ` "<a href="${paper.links[key]}" target="_blank">${paper.title}</a>"`;
+                                        break;
+                                    } else if (key === "Paper") {
+                                        linksHTML = ` "<a href="${paper.links[key]}" target="_blank">${paper.title}</a>"`;
+                                        break;
+                                    }
+                                }
+                            }
+                            if (linksHTML === "") {
+                                linksHTML = ` "${paper.title}"`;
+                            }
+
+                            let extraHTML = "";
+                            if (Array.isArray(paper.extra)) {
+                                extraHTML = paper.extra.map((text, index) => {
+                                    let link = (Array.isArray(paper.extra_links) && paper.extra_links[index]) ? paper.extra_links[index] : "";
+                                    if (link) {
+                                        return `<strong style="color: red;">[<a href="${link}" target="_blank">${text}</a>]</strong>`;
+                                    } else {
+                                        return `<strong style="color: red;">[${text}]</strong>`;
+                                    }
+                                }).join(" ");
+                            }
+
+                            let paperHTML = `
+                                    <li>
+                                        ${paper.authors}${": "}
+                                        ${linksHTML}${", "}
+                                        <em>${paper.detailed_conference}</em>
+                                        ${"("}${paper.year}${")"}
+                                        ${extraHTML}
+                                    </li>
+                                `;
+                            relatedPublications.innerHTML += paperHTML;
+                        }
+                    });
+                })
+                .catch(error => console.error("Error loading related publications:", error));
+        });
+    </script> -->
+</body>
+
+</html>
