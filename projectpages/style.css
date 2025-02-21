@@ -87,3 +87,22 @@ pre {
 #abstract {
     text-align: justify;
 }
+
+.nav {
+    text-align: left;
+    margin-bottom: 10px;
+    /* タイトルとの間に余白 */
+}
+
+.home-link {
+    font-size: 14px;
+    /* 文字サイズを小さく */
+    color: #007bff;
+    /* クリック前後で色が変わらない */
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+    /* ホバー時だけ下線を表示 */
+}
