@@ -77,6 +77,16 @@ pre {
     padding: 10px;
     border-radius: 5px;
     text-align: left;
+    overflow-x: auto;
+     /* word-wrap: break-word;  */
+    max-width: 100%;
+}
+
+pre code {
+    background-color: transparent;
+    color: currentColor;
+    font-size: 1em;
+    padding: 0;
 }
 
 #abstract {
@@ -86,18 +96,14 @@ pre {
 .nav {
     text-align: left;
     margin-bottom: 10px;
-    /* タイトルとの間に余白 */
 }
 
 .home-link {
     font-size: 14px;
-    /* 文字サイズを小さく */
     color: #007bff;
-    /* クリック前後で色が変わらない */
     text-decoration: none;
 }
 
 .home-link:hover {
     text-decoration: underline;
-    /* ホバー時だけ下線を表示 */
 }
