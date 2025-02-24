@@ -17,10 +17,11 @@
     },
     {
         "pickup": true,
+        "category": "journal",
         "title": "AIR-range: Designing optical systems to present a tall mid-AIR image with continuous luminance on and above a tabletop",
-        "authors": "Tomoyo Kikuchi，Yuchi Yahagi，Shogo Fukushima，Saki Sakaguchi，and Takeshi Naemura",
+        "authors": "Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura",
         "conference": "ITE Transactions on Media Technology and Applications 2023",
-        "detailed_conference": "ITE Transactions on Media Technology and Applications，vol. 11，no. 2，pp. 75-87",
+        "detailed_conference": "ITE Transactions on Media Technology and Applications, vol. 11, no. 2, pp. 75-87",
         "year": "2023.4",
         "image": "img/ite2023/teaser.png",
         "links": {
@@ -31,10 +32,11 @@
     },
     {
         "pickup": true,
+        "category": "demo",
         "title": "ReQTable: Square tabletop display that provides dual-sided mid-air images to each of four users",
-        "authors": "Mizuki Takenawa，Tomoyo Kikuchi，Yuchi Yahagi，Shogo Fukushima，and Takeshi Naemura",
+        "authors": "Mizuki Takenawa, Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, and Takeshi Naemura",
         "conference": "SIGGRAPH 2022 Emerging Technologies",
-        "detailed_conference": "ACM SIGGRAPH 2022 Emerging Technologies，Article No. 8",
+        "detailed_conference": "ACM SIGGRAPH 2022 Emerging Technologies, Article No. 8",
         "year": "2022.8",
         "image": "img/sig2022/teaser.jpg",
         "links": {
@@ -46,9 +48,10 @@
     },
     {
         "pickup": false,
+        "category": "poster",
         "title": "A Unified Approach to Collision Detection Using Signed Distances on Vertices and Edges",
         "authors": "Tomoyo Kikuchi and Takashi Kanai",
-        "detailed_conference": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games，Poster",
+        "detailed_conference": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games, Poster",
         "year": "2024.5",
         "links": {
             "paper": "https://i3dsymposium.org/2024/posters.html"
@@ -56,9 +59,10 @@
     },
     {
         "pickup": false,
+        "category": "poster",
         "title": "AIR-range: Arranging optical systems to present mid-AIR images with continuous luminance on and above a tabletop",
-        "authors": "Tomoyo Kikuchi，Yuchi Yahagi，Shogo Fukushima，Saki Sakaguchi，and Takeshi Naemura",
-        "detailed_conference": "IEEE VR，Poster，A-C43",
+        "authors": "Tomoyo Kikuchi, Yuchi Yahagi, Shogo Fukushima, Saki Sakaguchi, and Takeshi Naemura",
+        "detailed_conference": "IEEE VR, Poster, A-C43",
         "year": "2022.3",
         "links": {
             "paper": "https://ieeexplore.ieee.org/document/9757674"
@@ -68,46 +72,52 @@
     },
     {
         "pickup": false,
+        "category": "domestic",
         "title": "三角形プリミティブのための効率的な衝突処理アルゴリズム",
-        "authors": "菊池知世，金井崇",
+        "authors": "菊池知世, 金井崇",
         "detailed_conference": "Visual Computing (in Japanese)",
         "year": "2024.9",
         "extra": ["ポリフォニー・デジタル賞 (2024.9)", "(社)情報処理学会 Visual Computing 2024 優秀研究発表賞 (2024.9)"]
     },
     {
         "pickup": false,
+        "category": "domestic",
         "title": "仰臥位でのVR体験向け非装着型空中浮遊HMDの基礎検討",
-        "authors": "古谷佳輝，矢作優知，菊池知世，余合彩子，清川清，福嶋政期",
-        "detailed_conference": "第29回日本バーチャルリアリティ学会大会 (in Japanese)，3E2-01",
+        "authors": "古谷佳輝, 矢作優知, 菊池知世, 余合彩子, 清川清, 福嶋政期",
+        "detailed_conference": "第29回日本バーチャルリアリティ学会大会 (in Japanese), 3E2-01",
         "year": "2024.9"
     },
     {
         "pickup": false,
+        "category": "domestic",
         "title": "卓上直立空中像を4方向に提示する光学系における迷光低減手法の検討",
-        "authors": "武縄瑞基，福嶋政期，矢作優知，菊池知世，苗村健",
-        "detailed_conference": "IEICE Technical Report (in Japanese)，vol.122，no. 74，MVE2022-3，pp. 13-18",
+        "authors": "武縄瑞基, 矢作優知, 菊池知世, 福嶋政期, 苗村健",
+        "detailed_conference": "IEICE Technical Report (in Japanese), vol.122, no. 74, MVE2022-3, pp. 13-18",
         "year": "2022.6",
         "extra": ["MVE Award (2022.9)", "HC Award (2022.12)"]
     },
     {
         "pickup": false,
+        "category": "domestic",
         "title": "空間分割型可視光通信における隣接領域混信検出による位置情報の復号率向上",
-        "authors": "臼井一貴，覚井優希，菊池知世，福嶋政期，苗村健",
-        "detailed_conference": "Technical report of IEICE (in Japanese)，vol 121，no. 423，MVE2021-73，pp. 175-180",
+        "authors": "臼井一貴, 覚井優希, 菊池知世, 福嶋政期, 苗村健",
+        "detailed_conference": "Technical report of IEICE (in Japanese), vol 121, no. 423, MVE2021-73, pp. 175-180",
         "year": "2022.3"
     },
     {
         "pickup": false,
-        "title": "AIR-range:輝度連続性を考慮した空中像のテーブル面から中空までの配置手法",
-        "authors": "菊池知世，矢作優知，福嶋政期，阪口紗季，苗村健",
-        "detailed_conference": "The 26th Annual Conference of the VRSJ (in Japanese)，1D3-3",
+        "category": "domestic",
+        "title": "AIR-range: 輝度連続性を考慮した空中像のテーブル面から中空までの配置手法",
+        "authors": "菊池知世, 矢作優知, 福嶋政期, 阪口紗季, 苗村健",
+        "detailed_conference": "The 26th Annual Conference of the VRSJ (in Japanese), 1D3-3",
         "year": "2021.9"
     },
     {
         "pickup": false,
+        "category": "domestic",
         "title": "スマートフォンの傾きとスワイプを用いた質感提示システム",
-        "authors": "菊池知世，宮﨑正史，小室孝，小川賀代",
-        "detailed_conference": "IPSJ Interaction (in Japanese)，pp. 562-565",
+        "authors": "菊池知世, 宮﨑正史, 小室孝, 小川賀代",
+        "detailed_conference": "IPSJ Interaction (in Japanese), pp. 562-565",
         "year": "2020.3"
     }
 ]

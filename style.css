@@ -1,66 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 40px;/* ページの余白を増やす */
-    line-height: 1.6;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 20px 30px;
     background-color: #f9f9f9; /* 背景色を淡いグレーにして視認性向上 */
 }
 
+td {
+    padding: 2px;
+}
+
+tbody tr td:first-child {
+    min-width: 180px;
+    max-width: 200px;
+}
+
 .title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .subtitle {
-    font-size: 20px;
     color: gray;
 }
 
 #portrait {
+    max-width: 150px;
+    height: auto;
     border-radius: 10px;
     border: 2px solid #ddd;
 }
 
-table {
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* publication lists */
+table#pubTable {
+    text-align: left;
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+    vertical-align: bottom;
 }
 
-td {
-    padding: 10px;
-    padding-left: 0px;
-    padding-right: 20px;
-    vertical-align: middle;
-}
-
-.tr {
-    margin-top: 10px;
-    margin-bottom: 10px;
+td#pubTable {
+    padding: 15px 0px;
 }
 
 .paperImage {
-    width: 240px;
-    height: 160px;
-    border: 1px solid #ccc;
+    width: 170px;
+    height: 113px;
+}
+
+tbody tr td#pubTable:first-child {
+    min-width: 200px;
+    max-width: 200px;
 }
 
 .paperTitle {
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .paperAuthors,
 .paperConference {
-    font-size: 1.2rem;
     color: #6c757d;
 }
 
 .paperConference {
-    margin-bottom: 10px;
     font-style: italic;
 }
 
-.paperButton {
+/* .paperButton {
     display: inline-block;
     margin-right: 10px;
     padding: 5px 10px;
@@ -69,39 +84,36 @@ td {
     color: white;
     background-color: gray;
     border-radius: 5px;
-}
+} */
 
-.paperButton:hover {
+/* .paperButton:hover {
     background-color: gray;
-}
+} */
 
+
+/* education */
 .education {
-    margin-top: 20px;
+    padding-top: 10px;
 }
 
 .edu-entry {
-    margin-bottom: 15px;
-}
-
-.edu-title {
-    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .edu-date {
-    font-size: 16px;
     color: #555;
 }
 
 .edu-extra {
-    font-size: 16px;
     font-style: italic;
     color: #666;
 }
 
-#publications-container {
-    margin-top: 20px;
+li {
+    padding-bottom: 6px;
 }
 
+/* 
 .publication {
     margin-bottom: 30px;
     padding: 15px;
@@ -130,17 +142,9 @@ td {
 }
 
 .allPublications {
-    font-size: 1.2em;
     font-weight: bold;
     display: block;
     margin-top: 10px;
-}
+} */
 
-a {
-    color: blue;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}

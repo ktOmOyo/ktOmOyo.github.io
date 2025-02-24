@@ -1,19 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("papers.json")
+    fetch("../publication_list.json")
         .then(response => response.json())
         .then(data => {
             const publicationsDiv = document.getElementById("publications");
 
             let publicationsByYear = {};
 
-            data.forEach(paper => {
-                let yearMatch = paper.year.match(/\b(20\d{2})\b/);
-                let year = yearMatch ? yearMatch[1] : "Unknown";
+            let publicationsByCategory = {
+                "Papers": [],
+                "Posters and Demos": [],
+                "Domestic Conference": []
+            };
 
-                if (!publicationsByYear[year]) {
-                    publicationsByYear[year] = [];
+            data.forEach(paper => {
+                /* by year */
+                // let yearMatch = paper.year.match(/\b(20\d{2})\b/);
+                // let year = yearMatch ? yearMatch[1] : "Unknown";
+
+                // if (!publicationsByYear[year]) {
+                //     publicationsByYear[year] = [];
+                // }
+
+                /* by category */
+                let categoryKey = "Papers";  // default = "Paper"
+                if (["poster", "demo"].includes(paper.category)) {
+                    categoryKey = "Posters and Demos";
+                } else if (paper.category === "domestic") {
+                    categoryKey = "Domestic Conference";
                 }
 
+                /* ========================= */
                 let linksHTML = "";
                 if (paper.links) {
                     for (let key of Object.keys(paper.links)) {
@@ -54,14 +70,25 @@ document.addEventListener("DOMContentLoaded", function () {
                     </li>
                 `;
 
-                publicationsByYear[year].push(paperHTML);
+                // publicationsByYear[year].push(paperHTML); // by year
+                publicationsByCategory[categoryKey].push(paperHTML); // by category
             });
 
+            /* by year */
+            // let finalHTML = "";
+            // Object.keys(publicationsByYear).sort((a, b) => b - a).forEach(year => {
+            //     finalHTML += `<h2>${year}</h2>${publicationsByYear[year].join("")}`;
+            // });
+
+            /* by category */
             let finalHTML = "";
-            Object.keys(publicationsByYear).sort((a, b) => b - a).forEach(year => {
-                finalHTML += `<h2>${year}</h2>${publicationsByYear[year].join("")}`;
+            Object.keys(publicationsByCategory).forEach(category => {
+                if (publicationsByCategory[category].length > 0) {
+                    finalHTML += `<h2>${category}</h2><ul>${publicationsByCategory[category].join("")}</ul>`;
+                }
             });
 
+            /* ================== */
             publicationsDiv.innerHTML = finalHTML;
         })
         .catch(error => console.error("Error loading JSON:", error));

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("papers.json")
+    fetch("../publication_list.json")
         .then(response => response.json())
         .then(data => {
             let tableBody = document.getElementById("pubTable").querySelector("tbody");
@@ -11,12 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 let row = document.createElement("tr");
 
                 let imgTd = document.createElement("td");
+                imgTd.setAttribute("id", "pubTable");
                 let img = document.createElement("img");
                 img.className = "paperImage";
                 img.src = paper.image;
                 imgTd.appendChild(img);
 
                 let detailsTd = document.createElement("td");
+                detailsTd.setAttribute("id", "pubTable");
 
                 let titleDiv = document.createElement("div");
                 titleDiv.className = "paperTitle";
