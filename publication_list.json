@@ -31,6 +31,17 @@
         }
     },
     {
+        "pickup": false,
+        "category": "poster",
+        "title": "A Unified Approach to Collision Detection Using Signed Distances on Vertices and Edges",
+        "authors": "Tomoyo Kikuchi and Takashi Kanai",
+        "detailed_conference": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games, Poster",
+        "year": "2024.5",
+        "links": {
+            "paper": "https://i3dsymposium.org/2024/posters.html"
+        }
+    },
+    {
         "pickup": true,
         "category": "demo",
         "title": "ReQTable: Square tabletop display that provides dual-sided mid-air images to each of four users",
@@ -45,17 +56,6 @@
         },
         "extra": ["GIZMODO"],
         "extra_links": ["https://gizmodo.com.au/2022/08/its-time-to-duel-live-your-yu-gi-oh-fantasy-with-a-hologram-game-table/"]
-    },
-    {
-        "pickup": false,
-        "category": "poster",
-        "title": "A Unified Approach to Collision Detection Using Signed Distances on Vertices and Edges",
-        "authors": "Tomoyo Kikuchi and Takashi Kanai",
-        "detailed_conference": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games, Poster",
-        "year": "2024.5",
-        "links": {
-            "paper": "https://i3dsymposium.org/2024/posters.html"
-        }
     },
     {
         "pickup": false,
