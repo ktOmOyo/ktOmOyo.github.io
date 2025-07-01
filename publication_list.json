@@ -4,8 +4,8 @@
         "category": "journal",
         "title": "A Unified Discrete Collision Framework for Triangle Primitives",
         "authors": "Tomoyo Kikuchi and Takashi Kanai",
-        "conference": "Eurographics 2025",
-        "detailed_conference": "Eurographics 2025",
+        "conference": "Computer Graphics Forum (Proc. Eurographics 2025)",
+        "detailed_conference": "Computer Graphics Forum (Proc. Eurographics 2025), vol. 44, no.2, pp. e70029",
         "year": "2025.5",
         "image": "img/eg2025/teaser.png",
         "links": {
