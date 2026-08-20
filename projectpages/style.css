@@ -107,3 +107,26 @@ pre code {
 .home-link:hover {
     text-decoration: underline;
 }
+
+/* スマホ・タブレット向け調整 (画面幅600px以下) */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px 28px; /* 左右の余白を広めに確保 */
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 60px 0 15px; /* PC用の160pxからスマホ向けに調整 */
+    }
+
+    #abstract {
+        text-align: left; /* スマホ画面では両端揃えより左揃えの方がスッキリ見えます */
+        font-size: 15px;
+        line-height: 1.7;
+    }
+}

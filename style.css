@@ -149,3 +149,46 @@ li {
 } */
 
 
+/* レスポンシブ対応 (画面幅が600px以下のデバイス向け) */
+@media screen and (max-width: 600px) {
+    /* 1. ページ全体に少し余裕を持たせる */
+    body {
+        padding: 15px; 
+    }
+
+    /* 2. トップのプロフィール部分のテーブルを縦積みにする */
+    #topTable tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* 写真とテキストを中央揃えに */
+        text-align: center;
+    }
+
+    #topTable tbody tr td:first-child {
+        min-width: auto;
+        margin-bottom: 15px; /* 写真とテキストの間に余白 */
+    }
+
+    /* 3. 論文リストのテーブルを縦積みにする */
+    #pubTable tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px; /* 各論文の間に余白 */
+    }
+
+    #pubTable tbody tr td#pubTable:first-child {
+        min-width: auto;
+        max-width: 100%;
+        padding-bottom: 10px; /* 画像とテキストの間に余白 */
+    }
+
+    .paperImage {
+        width: 100%; /* 画像をスマホの幅に合わせて最大化 */
+        max-width: 300px; /* ただし大きくなりすぎないように制限 */
+        height: auto;
+    }
+
+    td#pubTable {
+        padding: 0; /* 縦積みにしたので元々のパディングをリセット */
+    }
+}

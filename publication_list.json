@@ -2,6 +2,14 @@
     {
         "pickup": false,
         "category": "domestic",
+        "title": "密接層状のセグメンテーション手法の検討",
+        "authors": "菊池 知世, 金井 崇, 舩冨 卓哉",
+        "detailed_conference": "第29回画像の認識・理解シンポジウム (MIRU2026), no. IS2-023",
+        "year": "2026.8"
+    },
+    {
+        "pickup": false,
+        "category": "domestic",
         "title": "位置ベースダイナミクスにおける摩擦モデルを併用した高精度ニューラル衝突場",
         "authors": "松浦 諒，菊池 知世，金井 崇",
         "detailed_conference": "映像表現・芸術科学フォーラム 2026 (Expressive Japan 2026) (映像情報メディア学会技術報告, vol. 50, no. 7, AIT2026-75, pp. 134-137)",
