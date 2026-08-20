@@ -108,6 +108,23 @@ pre code {
     text-decoration: underline;
 }
 
+/* 併記する英語用の共通スタイル */
+.en-sub {
+    font-size: 0.75em;
+    color: #666;
+    display: block;
+    margin-top: 4px;
+    font-weight: normal;
+}
+.en-abstract {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+    padding-top: 15px;
+    /* border-top: 1px solid #eee; */
+    line-height: 1.6;
+}
+
 /* スマホ・タブレット向け調整 (画面幅600px以下) */
 @media screen and (max-width: 600px) {
     .container {
