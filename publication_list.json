@@ -2,6 +2,24 @@
     {
         "pickup": false,
         "category": "domestic",
+        "title": "位置ベースダイナミクスにおける摩擦モデルを併用した高精度ニューラル衝突場",
+        "authors": "松浦 諒, 菊池 知世, 金井 崇",
+        "detailed_conference": "Visual Computing 2026, No.OS3-1",
+        "year": "2026.9",
+        "extra": ["VC 学生論文賞 (2026.9)", "ゲームフリーク賞 (2026.9)"]
+    },
+    {
+        "pickup": false,
+        "category": "domestic",
+        "title": "階層包含球メッシュ表現と衝突検出への応用",
+        "authors": "池内 順哉, 菊池 知世, 金井 崇",
+        "detailed_conference": "Visual Computing 2026, No.OS2-2",
+        "year": "2026.9",
+        "extra": ["VC 論文賞 (2026.9)"]
+    },
+    {
+        "pickup": false,
+        "category": "domestic",
         "title": "密接層状のセグメンテーション手法の検討",
         "authors": "菊池 知世, 金井 崇, 舩冨 卓哉",
         "detailed_conference": "第29回画像の認識・理解シンポジウム (MIRU2026), no. IS2-023",
